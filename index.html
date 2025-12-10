@@ -77,22 +77,29 @@
           width: 150px;
         }
   
-        .g1 {
+        .g1 {      /* right sparkle */
           top: 480px;
-          right: 160px;
+          right: 140px;
           width: 150px;
+          animation: sparkling 1.5s infinite;
         }
     
-        .g2 {
+        .g2 {      /* nav bar sparkle */
           top: 100px;
           right: 350px;
           width: 60px;
         }
   
-        .g3 {
+        .g3 {    /* left sparkle */
           top: 140px;
           left: 120px;
           width: 150px;
+          animation: sparkling 1.5s infinite;
+        }
+  
+        @keyframes sparkling {
+          from {width: 150px;}
+          to {width: 170px;}
         }
   
         .text {
