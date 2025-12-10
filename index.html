@@ -16,7 +16,7 @@
         
       .content {
        width: 1200px;
-        height: 1000px; /*delete after*/
+       height: 900px; /*delete after*/
        margin: 120px auto; 
        z-index: 0;
        background: linear-gradient(180deg, #D4E9FF,#AAD3FF);
@@ -76,6 +76,12 @@
           position: absolute;
           width: 150px;
         }
+  
+        .g1 {
+          top: 480px;
+          right: 160px;
+          width: 150px;
+        }
     
         .g2 {
           top: 100px;
@@ -83,11 +89,37 @@
           width: 60px;
         }
   
+        .text {
+          align-content: center;
+          color: white;
+          font-family: 'Hoefler Text', Georgia, serif;
+          font-style: italic;
+          font-size: 30px;
+        }
+  
+        .text-center {
+         display: flex;
+         justify-content: center;  /* vertical center */
+         width: 100%;
+         height: 100%;
+        }
+  
+        .bg-graphic {
+          position: absolute;
+          z-index: -0.5;
+        }
+  
+        .b1 {
+          bottom: 0;
+          left: 0;
+        }
+  
     </style>
   </head>
   <body>
      <div class="main-container">
          <div class="content">
+           <img src="blur1.png" class="bg-graphic b1" alt="blurry graphics in the background">
            
              <nav  class="top-nav">
             <a href="https://janellelai.github.io/Final-website/">Home</a>
@@ -95,7 +127,15 @@
             <a href="https://janellelai.github.io/Designpage/">Design</a>
             <a href="https://janellelai.github.io/Contactpage/">Contact</a>
              </nav>
+           <img src="sparkle.png" class="floating-graphic g1" alt="sparkle graphic">
             <img src="graphic2.png" class="floating-graphic g2" alt="sparkles under nav bar">
+          
+           
+           <div class="text-center">
+             <div class="text"><a href="https://outlook.office.com/mail/deeplink/compose?to=j34lai@uwaterloo.ca">
+               💌 j34lai@uwaterloo.ca</a>
+           </div>
+           </div>
           
            <footer> <p>DESIGNED &amp; BUILT WITH <br> FIGMA &amp; NETNET STUDIO </p> </footer>
        </div>
